@@ -11,7 +11,7 @@ addToDoBtn.addEventListener('click', function() {
         paragraph.classList.add('paragraph-styling'); //this adds a class to each new <p>
         paragraph.innerText = inputField.value; //sets the value of the <p> to the input value
         toDoContainer.appendChild(paragraph); //sets the location of the new <p>
-        toDoContainer.classList.add('to-dos'); //here i set it to add a border around the list
+        paragraph.classList.add('to-dos'); //here i set it to add a border around the list
         inputField.value = ""; //here i set it to clear the input box after adding an item
     }
      paragraph.addEventListener('click', function(){
@@ -26,7 +26,7 @@ addToDoBtn.addEventListener('click', function() {
      paragraph.addEventListener('dblclick', function() {
         toDoContainer.removeChild(paragraph);
         if (toDoContainer.innerText == '') {
-            toDoContainer.classList.remove('to-dos')
+            paragraph.classList.remove('to-dos')
         } /* here i made sure that if the list is empty
             then there should be no border */
         paragraph.style.textDecoration = 'none';

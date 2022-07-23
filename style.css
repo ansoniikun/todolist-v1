@@ -27,6 +27,7 @@ body {
     border-style: solid;
     border-radius: 6px;
     border-color: #aaa;
+    padding: 0.5rem 0rem 0.5rem 1rem;
 }
 
 .paragraph-styling {
