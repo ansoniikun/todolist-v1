@@ -37,8 +37,10 @@ addToDoBtn.addEventListener('click', function() {
     let touchendX = 0
         
     function checkDirection() {
-      if (touchendX < touchstartX) alert('swiped left!')
-      if (touchendX > touchstartX) alert('swiped right!')
+      if (touchendX < touchstartX) {
+        toDoContainer.removeChild(paragraph);
+        alert('swiped left!');
+      }
     }
     
     paragraph.addEventListener('touchstart', e => {
