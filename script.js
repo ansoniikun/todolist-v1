@@ -39,7 +39,7 @@ addToDoBtn.addEventListener('click', function() {
     function checkDirection() {
       if (touchendX < touchstartX) {
         toDoContainer.removeChild(paragraph);
-        alert('swiped left!');
+        toDoContainer.classList.remove('to-dos');
       }
     }
     
