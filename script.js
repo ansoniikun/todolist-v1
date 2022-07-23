@@ -44,11 +44,11 @@ addToDoBtn.addEventListener('click', function() {
       if (touchendX > touchstartX) alert('swiped right!')
     }
     
-    document.addEventListener('touchstart', e => {
+    paragraph.addEventListener('touchstart', e => {
       touchstartX = e.changedTouches[0].screenX
     })
     
-    document.addEventListener('touchend', e => {
+    paragraph.addEventListener('touchend', e => {
       touchendX = e.changedTouches[0].screenX
       checkDirection()
     })
