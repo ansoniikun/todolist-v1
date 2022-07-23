@@ -31,11 +31,8 @@ addToDoBtn.addEventListener('click', function() {
             then there should be no border */
         paragraph.style.textDecoration = 'none';
      })
-}); /*the event listener takes two parameters, 
-    first the type of event that you want to listen to
-    then the function you create*/
 
-//SWIPE FEATURE
+     //SWIPE FEATURE
     let touchstartX = 0
     let touchendX = 0
         
@@ -52,3 +49,7 @@ addToDoBtn.addEventListener('click', function() {
       touchendX = e.changedTouches[0].screenX
       checkDirection()
     })
+}); /*the event listener takes two parameters, 
+    first the type of event that you want to listen to
+    then the function you create*/
+
